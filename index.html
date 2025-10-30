@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibiity</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+    <h3>Accessibiity</h3>
+
+    <button aria-label="Close menu">X</button>
+
+    <h2 id="label">Shirts</h2>
+    <button aria-labelledby="label">Shop Now</button>
+
+  <button>
+  <span class="material-icons" aria-hidden="true">add</span>
+  Add Book
+</button>
+
+<button type='button'>
+  <span class='material-icons'>add</span>
+  Add Book
+</button>
+
+<h3>Div without tab-index, not focus by default</h3>
+<div class='button-container'>
+  <div class='rock'>Rock</div>
+  <div class='paper'>Paper</div>
+  <div class='scissors'>Scissors</div>
+</div>
+
+<h3>Div with tab-index, focusable</h3>
+<div class='button-container'>
+  <div class='rock button' tabindex="0">Rock</div>
+  <div class='paper button'tabindex="0">Paper</div>
+  <div class='scissors button'tabindex="0">Scissors</div>
+</div>
+
+<h3>Button without tab-index, focus by default</h3>
+<div class='button-container'>
+  <button class='rock'>Rock</button>
+  <button class='paper'>Paper</button>
+  <button class='scissors'>Scissors</button>
+</div>
+
+<h3>Form; 2 different code with same output</h3>
+<label for='name'>Name</label>
+<input type='text' id='name' />
+
+<label>
+  Name
+  <input type='text' />
+</label>
+
+
+<h3>how to use style in P</h3>
+<p style="color: red;">❌ Error: Enter your name</p>
+
+<p><span style="color: red;">Error:</span> Enter your name</p>
+
+<h3>Order of the page </h3>
+<div class="container">
+  <button>Previous</button>
+  <button>next</button>
+</div>
+
+
+<h3>Div doesn't have focus, if you want to focus need tabindex</h3>
+<!-- This element is first in the tab order. -->
+<div tabindex='0'>This is the first element listed in the HTML.</div>
+
+<!-- This element is second in the tab order. -->
+<div tabindex='0' >This is the second element listed in the HTML.</div>
+
+
+
+</body>
+</html>

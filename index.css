@@ -1,0 +1,27 @@
+body{
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+  text-decoration-line: underline;
+}
+
+button:hover {
+  outline: 2px solid blue;
+  transform: scale(1.1);
+}
+
+
+button:first-child {
+  order: 2;
+}
+button:last-child {
+  order: 1;
+}
+
+div:focus {
+  outline: none;
+  background-color: lightblue;
+  border-color: dodgerblue;
+}
